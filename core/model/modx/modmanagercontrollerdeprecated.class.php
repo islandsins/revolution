@@ -55,7 +55,7 @@ class modManagerControllerDeprecated extends modManagerController {
 
             $cbody = include $f;
         } else {
-            $cbody = 'Could not find action file';
+            $cbody = 'Could not find action file at: '.$f;
         }
 
         if (!empty($this->ruleOutput)) {
